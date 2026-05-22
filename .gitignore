@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.pyc
+temp_editor/
+assets/structures/
+*.log
+*.aux
+*.pdf
+.env
+.venv/
+venv/
+env/
