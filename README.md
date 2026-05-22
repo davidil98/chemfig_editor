@@ -2,6 +2,8 @@
 
 A browser-based GUI built with **NiceGUI** to write, compile, and preview **ChemFig / LaTeX** chemical-structure code in real time. Output is rendered as a high-resolution PNG directly in the browser.
 
+![ChemFig Editor Interface](assets/chemfig_editor_preview.png)
+
 ---
 
 ## Features
@@ -50,22 +52,32 @@ brew install --cask basictex      # minimal; then: sudo tlmgr install chemfig mh
 
 # Poppler (pdftoppm)
 brew install poppler
+# or (if using conda)
+conda install -c conda-forge poppler
 ```
 
 **Linux (Debian / Ubuntu)**
 ```bash
 sudo apt-get update
 sudo apt-get install texlive-full poppler-utils
+# or (if using conda)
+conda install -c conda-forge poppler
 ```
 
 **Linux (Fedora / RHEL)**
 ```bash
 sudo dnf install texlive-scheme-full poppler-utils
+# or (if using conda)
+conda install -c conda-forge poppler
 ```
 
 **Windows**
 1. Install [MiKTeX](https://miktex.org/download) — it auto-installs missing packages on first compile.
 2. Install [Poppler for Windows](https://github.com/oschwartz10612/poppler-windows/releases) and add its `bin/` folder to `PATH`.
+Or install via conda:
+```bash
+conda install -c conda-forge poppler
+```
 
 ---
 
